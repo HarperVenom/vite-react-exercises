@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100vh;
+}
+button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.color {
+  height: 100%;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.color .type {
+  margin: 0;
+  font-size: 30px;
+}
+.color .value {
+  margin: 0;
+}

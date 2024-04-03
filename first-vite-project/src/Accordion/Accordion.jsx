@@ -42,19 +42,21 @@ const Accordion = () => {
                 Switch
             </button>
             {
-            data && data.length > 0 ? data.map((dataItem) =>
+            data && data.length > 0 
+                ? data.map((dataItem) =>
                 <div key={dataItem.id} className="question-block"
                     onClick={() => handleSelection(dataItem)}>
                     <div className="question">{
                         dataItem.question
                     }</div>
-                    {canShow(dataItem) ?
-                        <div className="answer">
+                    {canShow(dataItem) 
+                        ?<div className="answer">
                             {dataItem.answer}
-                        </div> : null
+                        </div>
+                        : null
                     }
-                </div>
-            ) : <div>No Data Found</div>
+                </div>) 
+                : <div>No Data Found</div>
         }
         </div>
     );
