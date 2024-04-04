@@ -1,0 +1,10 @@
+.branch,
+.item {
+  margin-left: 1rem;
+}
+.branch > .label {
+  cursor: pointer;
+}
+.item {
+  color: rgb(255, 255, 129);
+}
