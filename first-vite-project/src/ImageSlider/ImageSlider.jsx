@@ -42,7 +42,10 @@ const ImageSlider = ({ url, page, limit }) => {
 
   //Have to check this after useEffect!!!
   //Also we cant check loading in the final return statement because
-  // it doesn't get updated immidiately
+  //it doesn't get updated immidiately
+  //UPD: In the next project (LoadMoreData) the method
+  // described above worked though. Guess i did something differently there.
+  //Dont know what
   if (loading) {
     return <div>Loading...</div>;
   }
