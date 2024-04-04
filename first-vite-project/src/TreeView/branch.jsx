@@ -31,7 +31,7 @@ const Branch = ({ object: branchObject }) => {
         className="label"
         onClick={() => setChildrenRevealed(!childrenRevealed)}
       >
-        {branchObject.label}
+        {branchObject.label + (childrenRevealed ? " -" : "+")}
       </div>
       {childrenRevealed ? (
         <div className="children">
