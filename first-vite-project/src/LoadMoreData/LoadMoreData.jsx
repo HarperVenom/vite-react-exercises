@@ -7,7 +7,7 @@ const LoadMoreData = () => {
   const [totalLimit, settotalLimit] = useState(0);
 
   const [loading, setLoading] = useState(false);
-  const [error, seterror] = useState(false);
+  const [error, setError] = useState(false);
   const portion = 12;
 
   async function addData() {
@@ -23,7 +23,7 @@ const LoadMoreData = () => {
         setLoading(false);
       }
     } catch (err) {
-      seterror(err);
+      setError(err);
     }
   }
 
@@ -47,6 +47,8 @@ const LoadMoreData = () => {
       </div>
       {loading ? (
         <div>Loading...</div>
+      ) : error ? (
+        <div>Error occured: {error.message}</div>
       ) : products.length < totalLimit ? (
         <button className="load-more" onClick={loadMore}>
           Load More
