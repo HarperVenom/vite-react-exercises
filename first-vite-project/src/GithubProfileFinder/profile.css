@@ -1,0 +1,31 @@
+.profile-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.info-container > * {
+  display: flex;
+  flex-direction: column;
+}
+.profile-container .picture {
+  width: 50%;
+  max-width: 200px;
+}
+.profile-container .info-container {
+  width: 50%;
+}
+.info-container {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.info-container .label {
+  background-color: rgb(212, 212, 212);
+}
+.info-container .info {
+  margin: 0.5rem;
+}

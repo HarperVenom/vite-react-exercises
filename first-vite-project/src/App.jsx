@@ -10,6 +10,7 @@ import LightDarkMode from "./LightDarkMode";
 import ScrollProgress from "./ScrollProgress";
 import Tabs from "./Tabs";
 import CustomModal from "./CustomModal/main";
+import GithubProfileFinder from "./GithubProfileFinder/main";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
           { label: "Third", content: "Strawberry" },
         ]}
       ></Tabs> */}
-      <CustomModal></CustomModal>
+      {/* <CustomModal></CustomModal> */}
+      <GithubProfileFinder></GithubProfileFinder>
     </div>
   );
 }
