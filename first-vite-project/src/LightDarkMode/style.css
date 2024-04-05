@@ -1,12 +1,24 @@
+:root {
+  --background: white;
+  --text-primary: black;
+  --button-bg: white;
+  --button-text: black;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --button-bg: black;
+  --button-text: white;
+}
 body {
-  margin: 0;
-  background-color: white;
-  color: black;
+  background-color: var(--background);
+}
+.switch {
+  background-color: var(--background);
 }
 button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
   margin: 0;
-}
-.dark {
-  background-color: black;
-  color: white;
 }

@@ -10,10 +10,8 @@ const LightDarkMode = () => {
   }
 
   useEffect(() => {
-    mode === "light"
-      ? document.body.classList.remove("dark")
-      : document.body.classList.add("dark");
-  }, [mode, localStorage]);
+    document.body.setAttribute("data-theme", mode);
+  }, [mode]);
 
   return (
     <div className="switch">
