@@ -1,0 +1,14 @@
+.loading-bar {
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+}
+.loading-bar .completed {
+  background-color: green;
+}
+.container .content {
+  margin-top: 2rem;
+}

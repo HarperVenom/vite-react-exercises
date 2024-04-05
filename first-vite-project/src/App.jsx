@@ -7,6 +7,7 @@ import TreeView from "./TreeView";
 import Data from "./TreeView/data";
 import QRCodeGenerator from "./QRCodeGenerator";
 import LightDarkMode from "./LightDarkMode";
+import ScrollProgress from "./ScrollProgress";
 
 function App() {
   return (
@@ -18,7 +19,10 @@ function App() {
       {/* <LoadMoreData></LoadMoreData> */}
       {/* <TreeView data={Data}></TreeView> */}
       {/* <QRCodeGenerator></QRCodeGenerator> */}
-      <LightDarkMode></LightDarkMode>
+      {/* <LightDarkMode></LightDarkMode> */}
+      <ScrollProgress
+        url={`https://dummyjson.com/products?limit=100`}
+      ></ScrollProgress>
     </div>
   );
 }
