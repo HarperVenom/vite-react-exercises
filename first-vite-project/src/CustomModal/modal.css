@@ -1,0 +1,53 @@
+.custom-modal-container {
+  position: relative;
+  height: 100vh;
+}
+
+.modal-container {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  background-color: rgba(215, 215, 215, 0.767);
+  padding: 1rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  animation-name: showUp;
+  animation-duration: 0.2s;
+}
+@keyframes showUp {
+  from {
+    transform: translate(50%, -50%);
+    scale: 0.1;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    scale: 1;
+  }
+}
+
+.modal-container .close-button {
+  width: 50px;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+}
+.modal-header {
+  text-align: center;
+  font-size: 14px;
+  background-color: aquamarine;
+  padding: 0.5rem;
+}
+.modal-body {
+  background-color: bisque;
+  padding: 0.5rem;
+}
+.modal-footer {
+  padding: 0.5rem;
+  background-color: azure;
+}

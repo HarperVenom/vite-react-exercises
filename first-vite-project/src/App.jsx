@@ -9,6 +9,7 @@ import QRCodeGenerator from "./QRCodeGenerator";
 import LightDarkMode from "./LightDarkMode";
 import ScrollProgress from "./ScrollProgress";
 import Tabs from "./Tabs";
+import CustomModal from "./CustomModal/main";
 
 function App() {
   return (
@@ -24,13 +25,14 @@ function App() {
       {/* <ScrollProgress
         url={`https://dummyjson.com/products?limit=100`}
       ></ScrollProgress> */}
-      <Tabs
+      {/* <Tabs
         tabs={[
           { label: "First", content: "Apple" },
           { label: "Second", content: "Orange" },
           { label: "Third", content: "Strawberry" },
         ]}
-      ></Tabs>
+      ></Tabs> */}
+      <CustomModal></CustomModal>
     </div>
   );
 }
