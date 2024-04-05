@@ -1,0 +1,29 @@
+.tabs-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+  width: 50%;
+}
+.navbar-container {
+  background-color: rgb(225, 225, 225);
+  display: flex;
+}
+.navbar-container .link {
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+}
+.content-container {
+  margin: 1rem;
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: rgb(255, 255, 0);
+}
