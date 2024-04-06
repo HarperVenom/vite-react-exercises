@@ -11,6 +11,7 @@ import ScrollProgress from "./ScrollProgress";
 import Tabs from "./Tabs";
 import CustomModal from "./CustomModal/main";
 import GithubProfileFinder from "./GithubProfileFinder/main";
+import FilterSearch from "./FilterSearch/main";
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
         ]}
       ></Tabs> */}
       {/* <CustomModal></CustomModal> */}
-      <GithubProfileFinder></GithubProfileFinder>
+      {/* <GithubProfileFinder></GithubProfileFinder> */}
+      <FilterSearch></FilterSearch>
     </div>
   );
 }

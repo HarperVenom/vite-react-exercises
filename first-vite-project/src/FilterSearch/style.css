@@ -1,0 +1,11 @@
+.filter-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin: 1rem;
+}
+.filter-search .user {
+  margin: 0.5rem;
+}
