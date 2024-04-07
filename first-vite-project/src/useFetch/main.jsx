@@ -11,11 +11,19 @@ const UseFetchExample = () => {
 
   return (
     <div className="container">
-      <ul className="list">
-        {products
-          ? products.map((product) => <li key={product.id}>{product.title}</li>)
-          : null}
-      </ul>
+      {loading ? (
+        <div>Loading...</div>
+      ) : error ? (
+        <div>Error: {error.message}</div>
+      ) : (
+        <ul className="list">
+          {products
+            ? products.map((product) => (
+                <li key={product.id}>{product.title}</li>
+              ))
+            : null}
+        </ul>
+      )}
     </div>
   );
 };

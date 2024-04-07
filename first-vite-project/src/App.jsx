@@ -16,6 +16,7 @@ import TicTacToe from "./TicTacToe/main";
 import FeatureFlagsState from "./feature-flag-implementation/Context";
 import FeatureFlagsComponent from "./feature-flag-implementation/main";
 import UseFetchExample from "./useFetch/main";
+import UseClickOutsideHookExample from "./useClickOutsideHook/main";
 
 function App() {
   return (
@@ -45,7 +46,8 @@ function App() {
       {/* <FeatureFlagsState>
         <FeatureFlagsComponent></FeatureFlagsComponent>
       </FeatureFlagsState> */}
-      <UseFetchExample></UseFetchExample>
+      {/* <UseFetchExample></UseFetchExample> */}
+      <UseClickOutsideHookExample></UseClickOutsideHookExample>
     </div>
   );
 }
