@@ -13,6 +13,9 @@ import CustomModal from "./CustomModal/main";
 import GithubProfileFinder from "./GithubProfileFinder/main";
 import FilterSearch from "./FilterSearch/main";
 import TicTacToe from "./TicTacToe/main";
+import FeatureFlagsState from "./feature-flag-implementation/Context";
+import FeatureFlagsComponent from "./feature-flag-implementation/main";
+import UseFetchExample from "./useFetch/main";
 
 function App() {
   return (
@@ -38,7 +41,11 @@ function App() {
       {/* <CustomModal></CustomModal> */}
       {/* <GithubProfileFinder></GithubProfileFinder> */}
       {/* <FilterSearch></FilterSearch> */}
-      <TicTacToe></TicTacToe>
+      {/* <TicTacToe></TicTacToe> */}
+      {/* <FeatureFlagsState>
+        <FeatureFlagsComponent></FeatureFlagsComponent>
+      </FeatureFlagsState> */}
+      <UseFetchExample></UseFetchExample>
     </div>
   );
 }
