@@ -17,6 +17,7 @@ import FeatureFlagsState from "./feature-flag-implementation/Context";
 import FeatureFlagsComponent from "./feature-flag-implementation/main";
 import UseFetchExample from "./useFetch/main";
 import UseClickOutsideHookExample from "./useClickOutsideHook/main";
+import UseWindowResizHookTest from "./useWindowSize/main";
 
 function App() {
   return (
@@ -47,7 +48,8 @@ function App() {
         <FeatureFlagsComponent></FeatureFlagsComponent>
       </FeatureFlagsState> */}
       {/* <UseFetchExample></UseFetchExample> */}
-      <UseClickOutsideHookExample></UseClickOutsideHookExample>
+      {/* <UseClickOutsideHookExample></UseClickOutsideHookExample> */}
+      <UseWindowResizHookTest></UseWindowResizHookTest>
     </div>
   );
 }
